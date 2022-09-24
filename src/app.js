@@ -7,6 +7,7 @@ const route = require("./router")
 const app = express()
 
 app.use(morgan("dev"))
+app.use(express.json())
 
 app.use(route)
 
